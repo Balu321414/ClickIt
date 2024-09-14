@@ -1,0 +1,35 @@
+.testimonial-section {
+  padding: 80px 20px;
+  background: linear-gradient(200deg, white, lightcyan);
+  color: #333;
+  text-align: center;
+}
+
+.testimonial-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: orangered;
+}
+
+.testimonial {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid cyan;
+}
+
+.testimonial p {
+  font-size: 22px;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.testimonial h4 {
+  font-size: 18px;
+  color: green;
+  margin-top: 10px;
+}

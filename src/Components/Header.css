@@ -1,0 +1,98 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, black, darkcyan, grey, black);
+  color: white;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logo a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.logo a:hover {
+  color: orangered;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  color: yellow;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: orangered;
+}
+
+.mobile-menu-icon {
+  display: none !important;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 980px) {
+  .nav-menu {
+    display: none !important;
+    flex-direction: column;
+    background-color: transparent;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 999;
+  }
+
+  .nav-menu.open {
+    display: flex !important;
+    animation: slideDown 0.3s ease;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mobile-menu-icon {
+    display: flex !important;
+    font-size: 50px !important;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
