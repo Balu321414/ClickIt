@@ -11,7 +11,6 @@ const FooterSection = () => {
       <div className="social-media">
         <p>Follow us on Social Media</p>
         <ul>
-          <li><a href="#">Facebook</a></li>
           <li><a href="https://ubkyportfolio.netlify.app/">Website</a></li>
           <li><a href="https://www.linkedin.com/in/balakrishnau">LinkedIn</a></li>
         </ul>
